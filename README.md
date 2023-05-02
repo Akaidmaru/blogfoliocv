@@ -1,4 +1,4 @@
-# Project Title
+# Blogfoliocv
 
 ## Table of Contents
 
@@ -10,6 +10,13 @@
 ## About <a name = "about"></a>
 
 This is a Django project that will serve as my portfolio, my cv and my personal blog.
+
+Task list:
+[x] Basic Scaffolding of the project.
+[x] Config of basic parameters(.gitignore, hide sensitive information)
+[ ] Creation of the Blog App
+[ ] Creation of the Portfolio App
+[ ] Creation of the CV 
 
 ## Getting Started <a name = "getting_started"></a>
 
