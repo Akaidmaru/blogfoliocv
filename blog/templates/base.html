@@ -4,15 +4,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>INDEX</title>
+        <title>Blog Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h1>Test</h1>
-        <h2>Test</h2>
-        
+        <nav>
+            <a href="#">Home</a> <a href="#">Portfolio</a> <a href="#">CV</a>
+            <br/>
+        </nav>
+            <h1>BLOG</h1>
+            <article>
+                {% for post in post_list %}
+                <h2>{{ post.title }}</h2>
+                    <P>
+                        {{ post.content }}
+                    </P>
+                    <p>
+                        Posted by: {{ post.author }} on {{ post.date_posted }}
+                    </p>
+                    <hr/>
+                {% endfor %}
+                
+            </article>
         <script src="" async defer></script>
     </body>
 </html>
