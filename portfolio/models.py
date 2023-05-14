@@ -6,6 +6,7 @@ class Project(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='images/')
     url = models.URLField(blank=True)
+    technologies = models.TextField(blank=True)
 
     def __str__(self):
         return f"{self.title}"
